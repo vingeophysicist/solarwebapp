@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    {% block head %}
+    <title>service</title>
+    {% endblock %}
+  </head>
+  <body>
+    {% load static %}
+    {% block body %}
+    <section style ="padding-top:80px;">
+
+    <div class="jumbotron jumbotron-fluid"style = "background-color:#17202A;">
+      <h1 class="" style = "text-align:center; color:white; padding:0px;">service</h1>
+
+  <div class="container">
+    <p class="lead" style = "font-size:20px;  color:white;font-family: 'Patua One', cursive;">At Lavina Nigeria Limited we render the service of Solar system installation and sales of solar system material at an affordable price. We render Solar powered street light, Customised solar powered CCTV camera's and home Service installation.Our product are highly durable and has passed several factory testing procedure with a year warranty.we also offer training services to aspiring solar engineers.</p>
+  </div>
+</div>
+</section>
+<div class="container fluid">
+  <div class="row">
+
+      <div class="col-sm-3">
+        <img class="img-responsive img-thumbnail" src="{% static 'general/images/service1.jpg' %}" alt="">
+        <p style = "font-size:15px;font-family: 'Patua One', cursive;">Installation</p>
+
+      </div>
+      <div class="col-sm-3">
+        <img class="img-responsive img-thumbnail" src="{% static 'general/images/service2.jpg' %}" alt="">
+        <p style = "font-size:15px;font-family: 'Patua One', cursive;">Our products for sale</p>
+
+      </div>
+      <div class="col-sm-3">
+        <img class="img-responsive img-thumbnail" src="{% static 'general/images/student1.jpg' %}" alt="">
+        <p style = "font-size:15px; font-family: 'Patua One', cursive;">Our student actively working</p>
+
+      </div>
+      <div class="col-sm-3">
+        <img class="img-responsive img-thumbnail" src="{% static 'general/images/project16.jpg' %}" alt="">
+        <p style = "font-size:15px;font-family: 'Patua One', cursive;">Radiating installed solar powered street light(our work)</p>
+
+      </div>
+
+    </div>
+
+
+</div>
+
+
+{% endblock %}
+  </body>
+</html>

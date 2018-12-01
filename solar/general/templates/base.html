@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="This website advertise solar energy products and installation ">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" type ="text/css" href="{% static 'general/style.css' %}">
+    <link rel="short icon" type="images/jpg" href="{% static 'general/images/sun.jpg' %}">
+    {%block head%}
+    <title>Lavina Nigeria Ltd--solar products and installation Expert</title>
+    {% endblock %}
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar fixed-top navbar navbar-light" style="background-color:#b5e9e9;">
+
+      <span class="navbar-brand mb-0 h1">
+        <img src="{% static 'general/images/sun.jpg'%}" width="30" height="30" alt="">
+        Lavina Nigeria Limited
+      </span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link font-weight-bold" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="{% url 'service' %}">Service</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Project Executed
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item font-weight-bold" href="{% url 'gallery'%}">Projects gallery</a>
+          <a class="dropdown-item font-weight-bold" href="{% url 'contactform' %}">Contact form</a>
+          <!--<div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>-->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled font-weight-bold" href="{% url 'about' %}">About Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+{%block body%}
+
+{%endblock%}
+
+  <div class="container-fluid" style ="background-color:#4D5656; padding:45px 0px;" >
+  <div class="container">
+
+  <div class="row">
+    <div class="col-sm-4">
+        <h2 style="font-size:15px;color:white; font-family: 'Patua One', cursive;">Contact</h2>
+        <p style = "font-family: 'Patua One', cursive; color:white; font-size:13px">Mail:solarexpertnigeria@gmail.com</p>
+        <p style = "font-family: 'Patua One', cursive; color:white; font-size:13px">phone:+2348020935912, +2348037800329</p>
+    </div>
+    <div class="col-sm-4">
+      <h3 style="font-size:15px; color:white;font-family: 'Patua One', cursive;">Address</h3>
+      <p style="font-size:13px;  color:white;font-family: 'Patua One', cursive;">Head Office:No.111 Docume street Idumota Lagos Island,Nigeria</p>
+      <p style = "font-size:13px;  color:white;font-family: 'Patua One', cursive;">Abuja Office:28 Gudu Market Abuja Nigeria</p>
+      <p style = "font-size:13px;  color:white;font-family: 'Patua One', cursive;">Anambra Office:22 olaifite street Awada Onitsha</p>
+    </div>
+    <div class="col-sm-4">
+      <h2 style= "font-size:15px;color:white; font-family: 'Patua One', cursive;">Installation</h2>
+      <a href="{% url 'training' %}" style= "color:blue;font-family: 'Patua One', cursive;">Training</a>
+    </div>
+  </div>
+  Diamond web Design,copyright & copy; 2018
+  </div>
+
+</div>
+
+
+  </body>
+</html>

@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {%  block head %}
+    <title>projects gallery</title>
+    {% endblock %}
+  </head>
+  <body>
+    {% load static %}
+    {% block body %}
+  <section style = "padding-top:100px;">
+    <h1 style ="text-align:center;">Arrays of project executed</h1>
+    <p style = "font-size:20px;font-family: 'Patua One', cursive; text-align:center;">we put the interest of our clients first.Most of our works have received tremendous positive feedback.Customers satisfaction is our priority </p>
+
+  <div class="container-fluid" style = "padding:50px;">
+
+    <div class="row">
+
+        <div class="col-sm-3">
+          <img class="img-responsive img-thumbnail" src="{% static 'general/images/project1.jpg' %}" alt="">
+          <p style = "font-size:15px;font-family: 'Patua One', cursive;"></p>
+        </div>
+        <div class="col-sm-3">
+          <img class="img-responsive img-thumbnail" src="{% static 'general/images/project2.jpg' %}" alt="">
+          <p style = "font-size:15px;font-family: 'Patua One', cursive;"></p>
+        </div>
+        <div class="col-sm-3">
+          <img class="img-responsive img-thumbnail" src="{% static 'general/images/project6.jpg' %}" alt="">
+          <p style = "font-size:15px; font-family: 'Patua One', cursive;"></p>
+        </div>
+        <div class="col-sm-3">
+          <img class="img-responsive img-thumbnail" src="{% static 'general/images/project7.jpg' %}" alt="">
+          <p style = "font-size:15px;font-family: 'Patua One', cursive;">Solar powered street light</p>
+        </div>
+
+      </div>
+      <div class="row">
+
+          <div class="col-sm-3">
+            <img class="img-responsive img-thumbnail" src="{% static 'general/images/project12.jpg' %}" alt="">
+            <p style = "font-size:15px;font-family: 'Patua One', cursive;"></p>
+          </div>
+          <div class="col-sm-3">
+            <img class="img-responsive img-thumbnail" src="{% static 'general/images/project11.jpg' %}" alt="">
+            <p style = "font-size:15px;font-family: 'Patua One', cursive;"></p>
+          </div>
+          <div class="col-sm-3">
+            <img class="img-responsive img-thumbnail" src="{% static 'general/images/project16.jpg' %}" alt="">
+            <p style = "font-size:15px; font-family: 'Patua One', cursive;">solar powered street light</p>
+          </div>
+          <div class="col-sm-3">
+            <img class="img-responsive img-thumbnail" src="{% static 'general/images/project18.jpg' %}" alt="">
+            <p style = "font-size:15px;font-family: 'Patua One', cursive;">Solar powered street light</p>
+          </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-sm-3">
+              <img class="img-responsive img-thumbnail" src="{% static 'general/images/project21.jpg' %}" alt="">
+              <p style = "font-size:15px;font-family: 'Patua One', cursive;"></p>
+            </div>
+            <div class="col-sm-3">
+              <img class="img-responsive img-thumbnail" src="{% static 'general/images/project5.jpg' %}" alt="">
+              <p style = "font-size:15px;font-family: 'Patua One', cursive;"></p>
+            </div>
+            <div class="col-sm-3">
+              <img class="img-responsive img-thumbnail" src="{% static 'general/images/project14.jpg' %}" alt="">
+              <p style = "font-size:15px; font-family: 'Patua One', cursive;"></p>
+            </div>
+            <div class="col-sm-3">
+              <img class="img-responsive img-thumbnail" src="{% static 'general/images/project19.jpg' %}" alt="">
+              <p style = "font-size:15px;font-family: 'Patua One', cursive;"></p>
+            </div>
+
+          </div>
+
+
+    </div>
+  </section>
+
+
+
+
+    {% endblock %}
+
+  </body>
+</html>

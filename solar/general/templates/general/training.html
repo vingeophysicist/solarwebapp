@@ -1,0 +1,90 @@
+{% extends 'base.html'%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% block head %}
+    <title>Training</title>
+    {% endblock %}
+  </head>
+  <body>
+    {% load static %}
+    {% block body %}
+    <section style = "padding-top:100px;">
+      <h1 style ="text-align:center;">Our Students doing their thing</h1>
+      <p style = "font-size:20px;font-family: 'Patua One', cursive; text-align:center;">Our training programme is well structured and environmental friendly with ample time to master the craft of solar technology</p>
+
+    <div class="container-fluid" style = "padding:50px;">
+
+      <div class="row">
+
+          <div class="col-sm-3">
+            <img class="img-responsive img-thumbnail" src="{% static 'general/images/student1.jpg' %}" alt="">
+            <p style = "font-size:15px;font-family: 'Patua One', cursive;">Laboratory work</p>
+          </div>
+          <div class="col-sm-3">
+            <img class="img-responsive img-thumbnail" src="{% static 'general/images/student2.jpg' %}" alt="">
+            <p style = "font-size:15px;font-family: 'Patua One', cursive;">Laboratory work</p>
+          </div>
+          <div class="col-sm-3">
+            <img class="img-responsive img-thumbnail" src="{% static 'general/images/image25.jpg' %}" alt="">
+            <p style = "font-size:15px; font-family: 'Patua One', cursive;">Laboratory work</p>
+          </div>
+          <div class="col-sm-3">
+            <img class="img-responsive img-thumbnail" src="{% static 'general/images/image17.jpg' %}" alt="">
+            <p style = "font-size:15px;font-family: 'Patua One', cursive;">Laboratory work</p>
+          </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-sm-3">
+              <img class="img-responsive img-thumbnail" src="{% static 'general/images/image24.jpg' %}" alt="">
+              <p style = "font-size:15px;font-family: 'Patua One', cursive;">Field work</p>
+            </div>
+            <div class="col-sm-3">
+              <img class="img-responsive img-thumbnail" src="{% static 'general/images/image21.jpg' %}" alt="">
+              <p style = "font-size:15px;font-family: 'Patua One', cursive;">Laboratory work</p>
+            </div>
+            <div class="col-sm-3">
+              <img class="img-responsive img-thumbnail" src="{% static 'general/images/image8.jpg' %}" alt="">
+              <p style = "font-size:15px; font-family: 'Patua One', cursive;">Laboratory work</p>
+            </div>
+            <div class="col-sm-3">
+              <img class="img-responsive img-thumbnail" src="{% static 'general/images/image7.jpg' %}" alt="">
+              <p style = "font-size:15px;font-family: 'Patua One', cursive;">Laboratory work</p>
+            </div>
+
+          </div>
+          <div class="row">
+
+              <div class="col-sm-3">
+                <img class="img-responsive img-thumbnail" src="{% static 'general/images/service1.jpg' %}" alt="">
+                <p style = "font-size:15px;font-family: 'Patua One', cursive;">Laboratory work</p>
+              </div>
+              <div class="col-sm-3">
+                <img class="img-responsive img-thumbnail" src="{% static 'general/images/image6.jpg' %}" alt="">
+                <p style = "font-size:15px;font-family: 'Patua One', cursive;">Laboratory work</p>
+              </div>
+              <div class="col-sm-3">
+                <img class="img-responsive img-thumbnail" src="{% static 'general/images/student3.jpg' %}" alt="">
+                <p style = "font-size:15px; font-family: 'Patua One', cursive;">Laboratory work</p>
+              </div>
+              <div class="col-sm-3">
+                <img class="img-responsive img-thumbnail" src="{% static 'general/images/student4.jpg' %}" alt="">
+                <p style = "font-size:15px;font-family: 'Patua One', cursive;">Laboratory work</p>
+              </div>
+
+            </div>
+
+
+      </div>
+    </section>
+
+
+
+
+    {% endblock %}
+
+  </body>
+</html>
